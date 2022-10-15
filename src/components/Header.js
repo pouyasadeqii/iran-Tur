@@ -29,49 +29,6 @@ const Header = () => {
           <div className="flex flex-col">
             <div className="flex items-center gap-x-1">
               <img src={bestPrice} alt="bestPrice" className="w-4 h-4" />
-              <span className="text-base font-medium">
-                بهترین گارانتی قیمت ها
-              </span>
-            </div>
-            <div className="pr-5">
-              <span className="text-xs">کمترین قیمت و با کیفیت ترین خدمات</span>
-            </div>
-          </div>
-          {/* second */}
-          <div className="flex flex-col">
-            <div className="flex items-center gap-x-1">
-              <img src={reserve} alt="reserve" className="w-4 h-4" />
-              <span className="text-base font-medium">رزرو سریع</span>
-            </div>
-            <div className="pr-5">
-              <span className="text-xs">
-                بهترین هتل ها و پرواز ها در اختیار شما
-              </span>
-            </div>
-          </div>
-          {/* third */}
-          <div className="flex flex-col">
-            <div className="flex items-center gap-x-1">
-              <img src={liked} alt="liked" className="w-4 h-4" />
-              <span className="text-base font-medium">رضایت مشتری</span>
-            </div>
-            <div className="pr-5">
-              <span className="text-xs">
-                آسایش و رضایت مشتریان بهتری رسالت ماست
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* servisec desktop version */}
-
-      <div className="px-40  hidden md:flex items-center justify-center -mt-16">
-        <div className="w-full bg-mywhite rounded-3xl py-14 px-4 flex items-center justify-center  gap-x-10">
-          {/* first */}
-          <div className="flex flex-col">
-            <div className="flex items-center gap-x-1">
-              <img src={bestPrice} alt="bestPrice" className="w-4 h-4" />
               <span className="text-sm font-medium">
                 بهترین گارانتی قیمت ها
               </span>
@@ -100,6 +57,49 @@ const Header = () => {
             </div>
             <div className="pr-5">
               <span className="text-xs">
+                آسایش و رضایت مشتریان بهتری رسالت ماست
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* servisec desktop version */}
+
+      <div className="px-40  hidden md:flex items-center justify-center -mt-16">
+        <div className="w-full bg-mywhite rounded-3xl py-14 px-4 flex items-center justify-center  gap-x-10">
+          {/* first */}
+          <div className="flex flex-col">
+            <div className="flex items-center gap-x-1">
+              <img src={bestPrice} alt="bestPrice" className="w-4 h-4" />
+              <span className="text-base font-medium">
+                بهترین گارانتی قیمت ها
+              </span>
+            </div>
+            <div className="pr-5">
+              <span className="text-sm">کمترین قیمت و با کیفیت ترین خدمات</span>
+            </div>
+          </div>
+          {/* second */}
+          <div className="flex flex-col">
+            <div className="flex items-center gap-x-1">
+              <img src={reserve} alt="reserve" className="w-4 h-4" />
+              <span className="text-base font-medium">رزرو سریع</span>
+            </div>
+            <div className="pr-5">
+              <span className="text-sm">
+                بهترین هتل ها و پرواز ها در اختیار شما
+              </span>
+            </div>
+          </div>
+          {/* third */}
+          <div className="flex flex-col">
+            <div className="flex items-center gap-x-1">
+              <img src={liked} alt="liked" className="w-4 h-4" />
+              <span className="text-base font-medium">رضایت مشتری</span>
+            </div>
+            <div className="pr-5">
+              <span className="text-sm">
                 آسایش و رضایت مشتریان بهتری رسالت ماست
               </span>
             </div>
