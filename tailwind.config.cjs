@@ -15,7 +15,7 @@ module.exports = {
         "mygray" : " #878383",
       },
       fontFamily: {
-        sans: ["iranyekan"],
+        'sans': ['"iranyekan"'],
       },
       backgroundImage : {
         'bestTrip' : "url('./public/assets/Vector.png')",
