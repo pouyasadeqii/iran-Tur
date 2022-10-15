@@ -14,7 +14,7 @@ import Develop from "./components/Develop";
 
 const App = () => {
   return (
-    <div className="font-sans  ">
+    <div className="font">
       <Navbar />
       <Header />
       <Search />
