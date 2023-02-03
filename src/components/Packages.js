@@ -1,12 +1,12 @@
 import React from "react";
 
+import { FaChevronLeft } from "react-icons/fa";
+
 // icons
 import takhteJamshid from "../../public/assets/takhtjamshid-new.jpg";
-import turkiye from "../../public/assets/turkiye.jpg"
-import brazil from "../../public/assets/brazil.jpg"
-import france from "../../public/assets/france.jpg"
-
-
+import turkiye from "../../public/assets/turkiye.jpg";
+import brazil from "../../public/assets/brazil.jpg";
+import france from "../../public/assets/france.jpg";
 
 // components
 import Package from "./Package";
@@ -57,7 +57,10 @@ const Packages = () => {
           با این تور ها میتوانید به مکان های بی نظیر سفر کنید
         </p>
       </div>
-      <div id="pack" className="flex items-center px-9 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8">
+      <div
+        id="pack"
+        className="flex items-center px-9 md:px-20 justify-between gap-x-4 overflow-auto pb-8"
+      >
         {packs.map((pack) => (
           <Package
             title={pack.title}
@@ -68,6 +71,11 @@ const Packages = () => {
             key={pack.id}
           />
         ))}
+      </div>
+      <div className="flex justify-end items-center gap-2 mx-9 md:mx-20 transition-all
+      duration-100 hover:text-myorange cursor-pointer">
+        <span className="transition-all duration-100 text-inherit">مشاهده همه</span>
+        <FaChevronLeft className="transition-all duration-100 text-inherit" />
       </div>
     </div>
   );

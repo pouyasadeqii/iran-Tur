@@ -2,12 +2,14 @@ import React, { useState } from "react";
 
 // icons
 import ticket from "../../public/assets/ticket.svg";
+import ticketOrange from "../../public/assets/ticket-orange.svg";
 import airplane from "../../public/assets/airplane.svg";
 import hamburgerMenu from "../../public/assets/sort.svg";
 import login from "../../public/assets/login.svg";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [hover, setHover] = useState(false);
 
   const showHandler = () => {
     setShowMenu(!showMenu);
@@ -34,7 +36,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-x-4">
             <li>
               <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 text-myorange border-b-2 border-myorange hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange  hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+                className="block md:text-xs xl:text-lg hover:border-b-2 text-myorange border-b-2 border-myorange hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 f-myorange  hover:text-myorange lg:text-base px-2 py-3"
                 href="#"
               >
                 صفحه اصلی
@@ -42,7 +44,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-1 focus:border-myorange hover:text-myorange lg:text-base px-2 py-3"
                 href="#pakage"
               >
                 لیست تور ها
@@ -50,7 +52,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-1 focus:border-myorange hover:text-myorange lg:text-base px-2 py-3"
                 href="#destination"
               >
                 مقصد ها
@@ -58,7 +60,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-1 focus:border-myorange hover:text-myorange lg:text-base px-2 py-3"
                 href="#bestTrip"
               >
                 اقامت
@@ -66,7 +68,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-2 focus:border-myorange hover:text-myorange rounded-lg lg:text-base px-2 py-3"
+                className="block md:text-xs xl:text-lg hover:border-b-2 hover:border-myorange transition-all duration-200 focus:text-myorange focus:border-b-1 focus:border-myorange hover:text-myorange lg:text-base px-2 py-3"
                 href="#weblog"
               >
                 وبلاگ
@@ -75,14 +77,19 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="flex items-center gap-x-4">
-          <span>
-            <img src={ticket} alt="ticket" />
-          </span>
-          <span className="md:text-xs xl:text-lg">پیگیری خرید</span>
-          <button className="bg-myorange py-2 md:text-xs xl:text-lg px-4 rounded-lg text-mywhite">
+          <div className="flex gap-4  hover:text-myorange" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+            <img
+              src={hover ? ticketOrange : ticket}
+              alt="ticket"
+            />
+            <span className="md:text-xs py-2 xl:text-lg hover:text-inherit cursor-pointer">
+              پیگیری خرید
+            </span>
+          </div>
+          <button className="bg-myorange transition-all duration-200 hover:shadow-md  hover:shadow-myorange py-2 md:text-xs xl:text-lg px-4 rounded-lg text-mywhite">
             ثبت نام
           </button>
-          <button className="bg-mywhite py-2 md:text-xs xl:text-lg px-7 rounded-lg border border-gray-300">
+          <button className="bg-mywhite transition-all duration-200 hover:bg-[#87838330] py-2 md:text-xs xl:text-lg px-7 rounded-lg border border-gray-300">
             ورود
           </button>
         </div>
