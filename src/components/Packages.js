@@ -57,7 +57,7 @@ const Packages = () => {
           با این تور ها میتوانید به مکان های بی نظیر سفر کنید
         </p>
       </div>
-      <div className="flex items-center px-9 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8">
+      <div id="pack" className="flex items-center px-9 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8">
         {packs.map((pack) => (
           <Package
             title={pack.title}

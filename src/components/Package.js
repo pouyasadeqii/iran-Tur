@@ -6,7 +6,7 @@ const Package = ({ title, description, oldPrice, newPrice, picture }) => {
       {/* section 1 */}
       <div className="flex flex-col w-full gap-y-6 bg-mywhite shadow-md hover:shadow-xl rounded-2xl overflow-hidden transition-all duration-300">
         {/* #1 */}
-        <div className="w-[260px] h-[190px] rounded-bl-2xl overflow-hidden">
+        <div className="max-w-[260px] md:w-[260px] h-[190px] rounded-bl-2xl overflow-hidden">
           <img src={picture} alt="package" className="w-full h-full" />
         </div>
         {/* #2 */}

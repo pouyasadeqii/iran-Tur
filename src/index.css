@@ -94,3 +94,7 @@
         font-family: iranyekan;
     }
   }
+
+  #pack::-webkit-scrollbar,#blog::-webkit-scrollbar {
+    display: none;
+  }

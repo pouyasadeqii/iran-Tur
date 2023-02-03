@@ -20,7 +20,7 @@ const Blogs = () => {
       <h2 className="text-xl md:text-2xl font-bold text-center">
         <span className="text-myorange">جدیدترین </span>وبلاگ ها
       </h2>
-      <div className="flex items-center px-9 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14">
+      <div id="blog" className="flex items-center px-9 md:px-20 justify-between gap-x-4 overflow-auto mb-8 pb-8 mt-9 md:mt-14">
         {blogs.map((blog) => (
           <Blog image={blog.image} title={blog.title} key={blog.id} />
         ))}
