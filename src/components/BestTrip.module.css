@@ -1,12 +1,20 @@
 .besttrip::before {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    right: 0;
-    height: 12px;
-    background: no-repeat url(../../public/assets/line.svg);
-    background-position: center;
-    background-size: contain;
-    height: 100%;
-    width: 100%;
-} 
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  background: no-repeat url(../../public/assets/line.svg);
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.wrraper {
+  background-image: url(../../public/assets/cloud.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
