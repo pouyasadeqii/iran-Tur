@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./BestTrip.module.css"
 
 // images
 import irvan from "../../public/assets/irvan.jpg";
@@ -10,7 +11,7 @@ const BestTrip = () => {
         {/* title section */}
         <div className="flex flex-col gap-y-2 pt-6 md:pt-16">
           <h2 className="text-center font-bold text-xl md:text-2xl md:text-start md:px-8">
-            <span className="text-myorange">بهترین سفرتان</span> را تجربه کنید
+            <span className={`text-myorange relative inline-block py-12 px-3 ${styles.besttrip}`}>بهترین سفرتان</span> را تجربه کنید
           </h2>
           <p className="mt-5 px-4 md:px-8 md:text-lg text-sm">
             تور ویژه به ایروان اکنون برای شما محیاست تا با خانواده تان سفری پر

@@ -1,0 +1,12 @@
+.besttrip::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    height: 12px;
+    background: no-repeat url(../../public/assets/line.svg);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+} 
