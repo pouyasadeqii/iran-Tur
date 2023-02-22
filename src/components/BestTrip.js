@@ -19,7 +19,7 @@ const BestTrip = () => {
             شما رخ خواهد داد و برای رزرو هر چه سریعتر با همکاران ما در تماس
             باشید.
           </p>
-          <div className="px-4 md:px-8 mt-2">
+          <div className="px-4 md:px-8 mt-10 mb-5">
             <button className="bg-myorange text-white inline-block px-8 py-2 md:py-3 rounded-md">
               بزن بریم
             </button>
